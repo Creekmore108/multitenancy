@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+Route::domain('{tenant}.multitenancy.test')->middleware('tenant')->group(function(){
+
+    Route::get('/', function ($tenant) {
+        return view('welcome');
+    });
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+
