@@ -9,7 +9,6 @@ use Spatie\Multitenancy\Actions\MakeQueueTenantAwareAction;
 use Spatie\Multitenancy\Actions\MakeTenantCurrentAction;
 use Spatie\Multitenancy\Actions\MigrateTenantAction;
 use Spatie\Multitenancy\Models\Tenant;
-use Spatie\Multitenancy\TenantFinder\DomainTenantFinder;
 
 
 return [
